@@ -1,0 +1,61 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="8dp">
+
+
+        <ImageView
+            android:id="@+id/imgAttendanceItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEmployeeNameItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Employee Name"
+                />
+
+            <TextView
+                android:id="@+id/tvCheckInTimeItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Check-In: - " />
+
+            <TextView
+                android:id="@+id/tvCheckOutTimeItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Check-Out: - " />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
